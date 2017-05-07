@@ -1,0 +1,42 @@
+<%= form_for(measure) do |f| %>
+    <% if measure.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(measure.errors.count, "error") %> prohibited this measure from being saved:</h2>
+
+        <ul>
+        <% measure.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :lat %>
+      <%= f.number_field :lat %>
+    </div>
+
+    <div class="field">
+      <%= f.label :lng %>
+      <%= f.number_field :lng %>
+    </div>
+
+    <div class="field">
+      <%= f.label :kind %>
+      <%= f.number_field :kind %>
+    </div>
+
+    <div class="field">
+      <%= f.label :color %>
+      <%= f.text_field :color %>
+    </div>
+
+    <div class="field">
+      <%= f.label :value %>
+      <%= f.number_field :value %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
