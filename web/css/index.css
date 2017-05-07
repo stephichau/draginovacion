@@ -1,0 +1,31 @@
+.header{
+background-color: #cfcfcf;
+padding: 15px;
+color: white;
+
+}
+@font-face{
+  font-family: Futura;
+  src:url(../font/Futura-Medium.ttf);
+}
+
+body{
+  font-family: Futura;
+}
+
+.menu{
+  background-color: #63cccc;
+  font-size: 17px;
+  color: white;
+}
+
+.body{
+  margin-top: 25px;
+}
+
+.icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
